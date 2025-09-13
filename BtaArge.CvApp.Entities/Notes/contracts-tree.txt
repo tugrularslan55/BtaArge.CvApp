@@ -1,0 +1,62 @@
+﻿
+
+Ogrency.Contracts
+├─ Abstractions
+│  ├─ Paged
+│  │  ├─ PagedRequest.cs
+│  │  └─ PagedResult{T}.cs
+│  ├─ Sorting
+│  │  ├─ SortRequest.cs
+│  │  └─ SortDirection.cs
+│  ├─ Filtering
+│  │  └─ TextFilter.cs
+│  ├─ Results
+│  │  ├─ ApiResult.cs
+│  │  ├─ ErrorCodes.cs
+│  │  └─ ProblemDetailsContract.cs
+│  └─ ContractsDoc.cs   // (kısa açıklama, rehber notları - opsiyonel)
+│
+├─ Common
+│  ├─ Enums
+│  │  ├─ Gender.cs
+│  │  ├─ EducationLevel.cs
+│  │  └─ RoomType.cs
+│  └─ Types
+│     └─ IdName.cs      // { Id, Name } gibi minik taşıyıcılar
+│
+├─ Students
+│  ├─ Requests
+│  │  ├─ GetStudentsRequest.cs
+│  │  ├─ CreateStudentRequest.cs
+│  │  └─ UpdateStudentRequest.cs
+│  └─ Responses
+│     ├─ StudentListItemDto.cs
+│     └─ StudentDetailDto.cs
+│
+├─ Universities
+│  ├─ Requests
+│  │  └─ GetUniversitiesRequest.cs
+│  └─ Responses
+│     └─ UniversityListItemDto.cs
+│
+├─ Dorms
+│  ├─ Requests
+│  │  ├─ GetDormsRequest.cs
+│  │  └─ CreateDormRequest.cs
+│  └─ Responses
+│     ├─ DormListItemDto.cs
+│     └─ DormDetailDto.cs
+│
+├─ Reservations
+│  ├─ Requests
+│  │  ├─ CreateReservationRequest.cs
+│  │  └─ GetReservationsRequest.cs
+│  └─ Responses
+│     └─ ReservationDto.cs
+│
+└─ Auth
+   ├─ Requests
+   │  ├─ LoginRequest.cs
+   │  └─ RefreshTokenRequest.cs
+   └─ Responses
+      └─ TokenResponse.cs

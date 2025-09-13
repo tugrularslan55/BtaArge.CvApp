@@ -1,0 +1,24 @@
+﻿Ogrency.Contracts
+├─ Abstractions
+│  └─ Markers
+│     ├─ IContract.cs
+│     ├─ IRequestContract.cs
+│     ├─ IResponseContract.cs
+│     ├─ ICommandContract.cs        // opsiyonel
+│     └─ IQueryContract.cs          // opsiyonel
+└─ AssemblyInfo
+   └─ ContractsAssembly.cs          // assembly marker (tarama için)
+
+Ogrency.Contracts/Students/Requests/CreateStudentRequest.cs        // güncellendi
+Ogrency.Contracts/Students/Responses/StudentListItemDto.cs         // güncellendi
+Ogrency.Contracts/Reservations/Requests/GetReservationsRequest.cs  // güncellendi
+Ogrency.Contracts/Reservations/Responses/ReservationListItemDto.cs // güncellendi
+
+Ogrency.WebApi
+└─ Filters
+   └─ ContractLoggingFilter.cs      // yeni
+// Program.cs içinde filter/validation kaydı (aşağıda)
+
+Ogrency.Application
+└─ Common
+   └─ AssemblyMarker.cs             // application assembly marker (opsiyonel)

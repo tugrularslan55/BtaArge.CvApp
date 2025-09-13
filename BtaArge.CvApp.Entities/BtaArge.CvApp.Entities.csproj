@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Notes\contracts-tree-interface.txt" />
+    <None Remove="Notes\contracts-tree.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Notes\contracts-tree-interface.txt" />
+    <Compile Include="Notes\contracts-tree.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
+  </ItemGroup>
+
+</Project>
