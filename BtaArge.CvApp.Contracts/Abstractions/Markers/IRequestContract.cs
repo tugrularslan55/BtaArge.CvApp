@@ -1,12 +1,2 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BtaArge.CvApp.Contracts.Abstractions.Markers
-{
-    public interface IRequestContract : IContract
-    {
-    }
-}
+﻿namespace BtaArge.CvApp.Contracts.Abstractions.Markers;
+public interface IRequestContract : IContract { }
