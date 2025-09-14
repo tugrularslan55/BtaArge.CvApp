@@ -1,2 +1,2 @@
 ﻿namespace BtaArge.CvApp.Contracts.Abstractions.Markers;
-public interface IResponseContract : IContract { }
+public interface IQueryContract : IRequestContract { }
